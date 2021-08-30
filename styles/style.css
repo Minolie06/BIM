@@ -1,4 +1,6 @@
 /* #region BASE */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 :root {
     --color-CTA: #50CB86;
     --color-wishlist: #E04462;
@@ -14,8 +16,59 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    font-family: 'Work Sans', 'Arial', sans-serif;
+}
+
+body {
+    position: relative;
 }
 
 /* #endregion */
+
+/* #region NAV */
+
+    nav {
+        width: 100%;
+        min-height: 5vh;
+        background-color: lightsalmon;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+/* #endregion */
+
+/* #region HEADER */
+
+header {
+    background-color: lightgreen;
+}
+
+/* #region FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: lightsalmon;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region MAIN */
+
+    main {
+        min-height: 150vh;
+        background-color: lightskyblue;
+    }
+
+/* #endregion */
+
