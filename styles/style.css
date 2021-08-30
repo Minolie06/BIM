@@ -1,3 +1,4 @@
+/* #region BASE */
 :root {
     --color-CTA: #50CB86;
     --color-wishlist: #E04462;
@@ -10,3 +11,11 @@
     --color-blue1: #005789;
     --color-blue2: #005a8f;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* #endregion */
