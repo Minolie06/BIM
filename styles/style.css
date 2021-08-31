@@ -345,9 +345,67 @@ main {
     border: 1px solid blue; /* display test */
 }
 
+/* #endregion */
+
+/* #region SERVICES */
+
+.container_bg.services {
+    background-color: white;
+}
+
+.box.services_card {
+    width: 33.33%;
+}
+
 /* tablet */
 @media (min-width: 769px) {
     
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+   
+}
+
+/* #endregion */
+
+/* #region WORKS */
+
+.container_bg.works {
+    background-color: white;
+}
+
+.box.work_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+
+/* tablet */
+@media (min-width: 769px) {
+    
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+   
+}
+
+/* #endregion */
+
+/* #region CONTACT */
+
+.container_bg.contact {
+    background-color: white;
+}
+
+/* tablet */
+@media (min-width: 769px) {
+    .box.contact_form, .box.contact_info {
+        width: 50%;
+    }
 }
 
 /* desktop + HD */
