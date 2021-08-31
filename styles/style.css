@@ -43,6 +43,11 @@ a {
     border-radius: 2rem;
 }
 
+.img_reponsive {
+    width: 100%;
+    height: auto;
+}
+
 /* #endregion */
 
 /* #region HEADER */
@@ -111,13 +116,24 @@ header {
 /* #region MAIN */
 
 main {
-    min-height: 80vh;
-    background-color: lightblue;
+    background-color: red; /* display test*/
 }
 
 .container {
-    padding-left: 20%;
-    padding-right: 20%;;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    min-height: 60vh; /* display test*/
+}
+
+.box {
+    width: 100%;
+    
+    min-height: 20vh; /* display test*/
+    border: 1px solid red; /* display test*/
 }
 
 /* #endregion */
@@ -174,5 +190,117 @@ main {
 
 /* #endregion */
 
+/* #region DETAILS */
+
+.container_bg.details {
+    background-color: white;
+}
+
+/* tablet */
+@media (min-width: 769px) {
+     .box.details_card {
+         width: 33.33%;
+     }
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+    .box.details_card {
+        width: 25%;
+    }
+
+    .box.details_video {
+        width: 25%;
+    }
+}
 
 
+/* #endregion */
+
+/* #region CORE_FEATURES */
+
+.container_bg.core_features {
+    background: linear-gradient(45deg, #005a8f, #ff5db1);
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+   .box.features {
+       width: 75%;
+   }
+
+   .box.stats {
+       width: 25%;
+   }
+}
+
+/* #endregion */
+
+/* #region FINISHED_PROJECTS */
+
+.container_bg.finished_projects {
+    background-color: white;
+}
+
+.box.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box.project>div {
+    width: 100%;
+
+    background-color: gold; /* display test */
+    min-height: 30vh; /* display test */
+}
+
+/* tablet */
+@media (min-width: 769px) {
+    .box.project .project_img {
+        width: 70%;
+    }
+
+    .box.project:nth-child(even) .project_img {
+        order: 1;
+    }
+
+    .box.project .project_descript {
+        width: 30%;
+    }
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+   
+}
+
+/* #endregion */
+
+/* #region TESTIMONIAL */
+
+.container_bg.testimonial {
+    background-color: var(--color-bg);
+}
+
+
+/* tablet */
+@media (min-width: 769px) {
+    .box.testimonial_card {
+        width: 33.33%;
+    }
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+   
+}
+
+/* #endregion */
+
+/* #region NEWSLETTER */
+
+.container_bg.newsletter {
+    background: linear-gradient(135deg, #ff5db1, #005a8f);
+}
+
+/* #endregion */
