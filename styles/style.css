@@ -126,7 +126,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 
-    min-height: 60vh; /* display test*/
+    min-height: 30vh; /* display test*/
 }
 
 .box {
@@ -290,17 +290,69 @@ main {
     }
 }
 
-/* desktop + HD */
-@media (min-width: 1201px) {
-   
-}
-
 /* #endregion */
 
 /* #region NEWSLETTER */
 
 .container_bg.newsletter {
     background: linear-gradient(135deg, #ff5db1, #005a8f);
+}
+
+/* #endregion */
+
+/* #region HISTORY */
+
+.container_bg.history {
+    background-color: white;
+}
+
+/* tablet */
+@media (min-width: 769px) {
+    .box.history_img {
+        width: 50%;
+    }
+    .box.history_text {
+        width: 50%;
+    }
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+    .box.history_img {
+        width: 40%;
+    }
+    .box.history_text {
+        width: 60%;
+    }
+}
+
+/* #endregion */
+
+/* #region MEET OUR STAFF */
+
+.container_bg.meet_staff {
+    background-color: white;
+}
+
+.box.staff {
+    display: flex;
+}
+
+.box.staff .staff_card {
+    width: 33.33%;
+
+    min-height: 30vh; /* display test */
+    border: 1px solid blue; /* display test */
+}
+
+/* tablet */
+@media (min-width: 769px) {
+    
+}
+
+/* desktop + HD */
+@media (min-width: 1201px) {
+   
 }
 
 /* #endregion */
